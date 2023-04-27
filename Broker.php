@@ -9,7 +9,7 @@ class Broker {
     }
 
     private function __construct(){
-        $this->mysqli = new mysqli("localhost", "root", "", "JovanaITEH");
+        $this->mysqli = new mysqli("localhost", "root", "", "skolajezikaa");
         if ($this->mysqli->connect_errno){
             exit("Nauspesna konekcija: greska> ".$this->mysqli->connect_error.", err kod>".$this->mysqli->connect_errno);
         }
