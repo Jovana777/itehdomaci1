@@ -19,7 +19,7 @@ class Termin {
 
     public static function getAll(Broker $broker)
     {
-        $query = "SELECT t.*, u.naziv as jezik_naziv FROM termin t INNER JOIN jezik u on (t.jezik=u.id)";
+        $query = "SELECT t.*, j.naziv as jezik_naziv FROM termin t INNER JOIN jezik u on (t.jezik=j.id)";
         return $broker->executeQuery($query);
     }
 
